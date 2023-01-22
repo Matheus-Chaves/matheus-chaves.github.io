@@ -1,7 +1,4 @@
 .introducao {
-  max-width: var(--max-width);
-  margin: 0 auto;
-  padding: 40px 20px;
   display: grid;
   grid-template-columns: 1fr 2fr;
   gap: max(30px, 8vw);
