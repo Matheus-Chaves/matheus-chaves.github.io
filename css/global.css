@@ -42,3 +42,11 @@ img {
   text-transform: uppercase;
   max-width: 4ch;
 }
+
+@media (max-width: 880px) {
+  .subtitulo {
+    font-size: 3rem;
+    max-width: initial;
+    text-transform: capitalize;
+  }
+}
