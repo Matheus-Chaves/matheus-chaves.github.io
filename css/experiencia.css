@@ -94,8 +94,28 @@
 
   .empresa-ano {
     position: initial;
-    width: initial;
+    width: fit-content;
     order: 1;
     text-align: left;
+    background-color: #fff;
+    padding: 5px 10px;
+    border-radius: 15px;
+  }
+
+  .empresa-ano::before {
+    content: "Ano: ";
+  }
+}
+
+@media (max-width: 500px) {
+  .empresa {
+    grid-template-columns: 1fr;
+  }
+
+  .empresa-ano {
+    position: absolute;
+    right: 20px;
+    left: initial;
+    top: 20px;
   }
 }
