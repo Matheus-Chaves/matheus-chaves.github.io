@@ -5,6 +5,7 @@
 
 #formacao .container {
   display: grid;
+  padding: 120px 20px;
   grid-template-columns: 1fr 2fr;
   gap: var(--grid-gap);
 }
