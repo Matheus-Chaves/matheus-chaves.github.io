@@ -8,10 +8,23 @@
   padding: 120px 20px;
   grid-template-columns: 1fr 2fr;
   gap: var(--grid-gap);
+  position: relative;
+}
+
+#formacao .container::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 130px;
+  height: 100px;
+  background: url("../img/detalhe.svg") no-repeat center;
+  bottom: -50px;
+  left: 20px;
 }
 
 #formacao .subtitulo {
   color: #000;
+  max-width: 6ch;
 }
 
 .formacao-texto {
@@ -116,4 +129,24 @@
 .cursos li {
   display: flex;
   justify-content: space-between;
+}
+
+@media (max-width: 880px) {
+  #formacao .container {
+    grid-template-columns: 1fr;
+    padding: 60px 20px;
+  }
+
+  #formacao .subtitulo {
+    color: #fff;
+  }
+
+  .formacao-texto {
+    font-size: 1.25rem;
+  }
+
+  .formacao-extra h3::before {
+    position: initial;
+    margin-bottom: 10px;
+  }
 }
