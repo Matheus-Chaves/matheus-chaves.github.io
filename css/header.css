@@ -31,3 +31,10 @@
     background: var(--cinza-claro);
   }
 }
+
+@media (max-width: 420px) {
+  .header-menu a {
+    padding: 10px 2vw;
+    font-size: 5vw;
+  }
+}
