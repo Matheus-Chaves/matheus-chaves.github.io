@@ -90,6 +90,7 @@
 
   .experiencia-texto {
     font-size: 1.25rem;
+    max-width: 50ch;
   }
 
   .empresa-ano {
